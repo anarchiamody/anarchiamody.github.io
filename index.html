@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AntyKostka - Minecraft 1.21.1 Fabric Mod</title>
+  <meta name="description" content="AntyKostka - mod do Minecraft 1.21.1 na Fabric. Przejmij kontrole nad losowoscia. Pobierz za darmo!">
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#hero">
+        <img src="assets/icons/icon.png" alt="AntyKostka" width="28" height="28" class="pixel-img">
+        <span>AntyKostka</span>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Otworz menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">O modzie</a></li>
+        <li><a href="#features">Funkcje</a></li>
+        <li><a href="#opinions">Opinie</a></li>
+        <li><a href="https://discord.gg/yDN4xFVvtN" class="nav__discord" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="#5865F2" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.082.114 18.105.135 18.12a19.963 19.963 0 0 0 6.024 3.046.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.046.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>Discord</a></li>
+        <li><a href="#download" class="nav__cta">&#8595; Pobierz</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__scanlines" aria-hidden="true"></div>
+    <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__logo-wrap reveal reveal--scale">
+        <img src="assets/icons/icon.png" alt="AntyKostka logo" class="hero__icon pixel-img"
+             width="128" height="128" fetchpriority="high">
+      </div>
+      <h1 class="hero__title reveal">
+        <span class="hero__t-white">Anty</span><span class="hero__t-green">Kostka</span>
+      </h1>
+      <p class="hero__subtitle reveal">Minecraft 1.21.1 &nbsp;&#183;&nbsp; Fabric Mod</p>
+      <p class="hero__desc reveal">Przejmij kontrole. Zniszcz losowosc. Graj na swoich zasadach.</p>
+      <div class="hero__cta-wrap reveal">
+        <a class="mc-btn mc-btn--primary" href="assets/files/AntyKostka-1.21.1-fabric.jar" download>
+          <span class="mc-btn__icon">&#8595;</span>
+          <span>Pobierz Mod</span>
+        </a>
+        <p class="hero__note">Darmowy &nbsp;&#183;&nbsp; Wymaga Fabric Loader</p>
+      </div>
+      <div class="hero__scroll-hint reveal" aria-hidden="true">
+        <span>&#9660;</span>
+      </div>
+    </div>
+
+    <div class="hero__ground" aria-hidden="true">
+      <div class="terrain__row terrain__grass"></div>
+      <div class="terrain__row terrain__dirt"></div>
+      <div class="terrain__row terrain__stone"></div>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="container stats-bar__inner">
+      <div class="stat reveal">
+        <span class="stat__num">1.21.1</span>
+        <span class="stat__label">Wersja MC</span>
+      </div>
+      <div class="stat__sep"></div>
+      <div class="stat reveal">
+        <span class="stat__num">Fabric</span>
+        <span class="stat__label">Loader</span>
+      </div>
+      <div class="stat__sep"></div>
+      <div class="stat reveal">
+        <span class="stat__num">100%</span>
+        <span class="stat__label">Darmowy</span>
+      </div>
+      <div class="stat__sep"></div>
+      <div class="stat reveal">
+        <span class="stat__num">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="stat__label">Ocena graczy</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__visual reveal reveal--left">
+          <div class="about__frame">
+            <img src="assets/icons/icon.png" alt="AntyKostka Mod" class="about__img pixel-img"
+                 loading="lazy" width="200" height="200">
+            <div class="about__glow"></div>
+            <div class="about__rings">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="section-label reveal">O modzie</span>
+          <h2 class="section-title reveal">Czym jest <em>AntyKostka</em>?</h2>
+          <p class="reveal">AntyKostka – mod do Minecrafta, który pozwala zapisać i automatycznie przywrócić wcześniej ustawiony układ itemów w ekwipunku gracza. Koniec z ręcznym układaniem wszystkiego od nowa.</p>
+          <p class="reveal">Niezaleznie czy grasz solo, na serwerze ze znajomymi, czy w rozbudowanym modpacku - AntyKostka dziala plynnie i bezproblemowo. Zaprojektowany specjalnie pod Fabric 1.21.1.</p>
+          <div class="about__tags reveal">
+            <span class="tag">Minecraft 1.21.1</span>
+            <span class="tag">Fabric</span>
+            <span class="tag tag--green">Darmowy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="terrain" aria-hidden="true">
+    <div class="terrain__row terrain__grass"></div>
+    <div class="terrain__row terrain__dirt"></div>
+    <div class="terrain__row terrain__dirt terrain__row--dark"></div>
+    <div class="terrain__row terrain__stone"></div>
+  </div>
+
+  <section class="features" id="features">
+    <div class="container">
+      <span class="section-label text-center reveal">Co oferuje?</span>
+      <h2 class="section-title text-center reveal">Funkcje moda</h2>
+      <div class="features__grid">
+
+        <article class="fcard reveal">
+          <div class="fcard__img-wrap">
+            <img src="assets/blocks/deepslate_diamond.png" alt=""
+                 class="fcard__img pixel-img" loading="lazy" width="64" height="64">
+          </div>
+          <h3 class="fcard__title">Precyzja</h3>
+          <p class="fcard__text">gwarantuje dokładne odwzorowanie zapisanego układu itemów bez błędów i przesunięć.</p>
+        </article>
+
+        <article class="fcard reveal">
+          <div class="fcard__img-wrap">
+            <img src="assets/blocks/deepslate_gold.png" alt=""
+                 class="fcard__img pixel-img" loading="lazy" width="64" height="64">
+          </div>
+          <h3 class="fcard__title">Zasoby</h3>
+          <p class="fcard__text">optymalizuje wykorzystanie zasobów, aby mod działał płynnie i bez zbędnego obciążenia gry.</p>
+        </article>
+
+        <article class="fcard reveal">
+          <div class="fcard__img-wrap">
+            <img src="assets/blocks/deepslate.png" alt=""
+                 class="fcard__img pixel-img" loading="lazy" width="64" height="64">
+          </div>
+          <h3 class="fcard__title">Stabilnosc</h3>
+          <p class="fcard__text">zapewnia bezproblemowe działanie nawet podczas długiej rozgrywki.</p>
+        </article>
+
+        <article class="fcard reveal">
+          <div class="fcard__img-wrap">
+            <img src="assets/blocks/grass.png" alt=""
+                 class="fcard__img pixel-img" loading="lazy" width="64" height="64">
+          </div>
+          <h3 class="fcard__title">Kompatybilnosc</h3>
+          <p class="fcard__text">współpracuje z innymi modami i różnymi wersjami gry.</p>
+        </article>
+
+        <article class="fcard reveal">
+          <div class="fcard__img-wrap">
+            <img src="assets/blocks/stone.png" alt=""
+                 class="fcard__img pixel-img" loading="lazy" width="64" height="64">
+          </div>
+          <h3 class="fcard__title">Niezawodnosc</h3>
+          <p class="fcard__text">zawsze przywraca zapisany układ wtedy, kiedy tego potrzebujesz.</p>
+        </article>
+
+        <article class="fcard reveal">
+          <div class="fcard__img-wrap">
+            <img src="assets/blocks/bedrock.png" alt=""
+                 class="fcard__img pixel-img" loading="lazy" width="64" height="64">
+          </div>
+          <h3 class="fcard__title">Fundament</h3>
+          <p class="fcard__text">podstawowy system moda, na którym opiera się cała jego funkcjonalność.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="terrain" aria-hidden="true">
+    <div class="terrain__row terrain__stone"></div>
+    <div class="terrain__row terrain__deepslate"></div>
+    <div class="terrain__row terrain__deepslate terrain__row--dark"></div>
+    <div class="terrain__row terrain__coal"></div>
+  </div>
+
+  <section class="opinions" id="opinions">
+    <div class="container">
+      <span class="section-label text-center reveal">Gracze mowia</span>
+      <h2 class="section-title text-center reveal">Opinie spolecznosci</h2>
+
+      <div class="slider reveal" id="opinionSlider" role="region" aria-label="Opinie graczy">
+        <div class="slider__track" id="sliderTrack">
+
+          <div class="ocard" role="group" aria-label="Opinia 1 z 5">
+            <div class="ocard__head">
+              <img src="assets/opinions/op1.png" alt="Gracz" class="ocard__avatar pixel-img"
+                   loading="lazy" width="64" height="64">
+              <div class="ocard__meta">
+                <span class="ocard__name">Simson421</span>
+                <span class="ocard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+            <blockquote class="ocard__quote">
+              "Mega przydatny mod, w końcu nie muszę ciągle układać ekwipunku od nowa."
+            </blockquote>
+          </div>
+
+          <div class="ocard" role="group" aria-label="Opinia 2 z 5">
+            <div class="ocard__head">
+              <img src="assets/opinions/p1.jfif" alt="" class="ocard__avatar pixel-img"
+                   loading="lazy" width="64" height="64">
+              <div class="ocard__meta">
+                <span class="ocard__name">Wojcix21697</span>
+                <span class="ocard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+            <blockquote class="ocard__quote">
+              "Działa dokładnie tak jak powinien , zapisuję i mam spokój "
+            </blockquote>
+          </div>
+
+          <div class="ocard" role="group" aria-label="Opinia 3 z 5">
+            <div class="ocard__head">
+              <img src="assets/opinions/p2.jpg" alt="" class="ocard__avatar pixel-img"
+                   loading="lazy" width="64" height="64">
+              <div class="ocard__meta">
+                <span class="ocard__name">czebany_jarnuch</span>
+                <span class="ocard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+            <blockquote class="ocard__quote">
+              "Na anarchia.gg dużo osób tego używa i serio robi robotę."
+            </blockquote>
+          </div>
+
+          <div class="ocard" role="group" aria-label="Opinia 4 z 5">
+            <div class="ocard__head">
+              <img src="assets/opinions/p3.webp" alt="" class="ocard__avatar pixel-img"
+                   loading="lazy" width="64" height="64">
+              <div class="ocard__meta">
+                <span class="ocard__name">NiebosPlaceq12</span>
+                <span class="ocard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+            <blockquote class="ocard__quote">
+              "Najlepsze jest to, że wszystko wraca na swoje miejsce jednym kliknięciem."
+            </blockquote>
+          </div>
+
+          <div class="ocard" role="group" aria-label="Opinia 5 z 5">
+            <div class="ocard__head">
+              <img src="assets/opinions/p4.jfif" alt="" class="ocard__avatar pixel-img"
+                   loading="lazy" width="64" height="64">
+              <div class="ocard__meta">
+                <span class="ocard__name">KastiSrasti67</span>
+                <span class="ocard__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+            </div>
+            <blockquote class="ocard__quote">
+              "Nie sądziłem, że tego potrzebuję, a teraz nie wyobrażam sobie gry bez tego moda."
+            </blockquote>
+          </div>
+
+        </div>
+
+        <div class="slider__dots" id="sliderDots" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta" id="download">
+    <div class="cta__bg" aria-hidden="true"></div>
+    <div class="container cta__inner">
+
+      <div class="cta__text">
+        <span class="section-label reveal">Pobierz teraz</span>
+        <h2 class="section-title reveal">Gotowy na zmiane?</h2>
+        <p class="cta__desc reveal">AntyKostka jest w 100% darmowy. Zainstaluj go w minute i odmien swoja rozgrywke w Minecraft 1.21.1 juz dzis.</p>
+        <div class="cta__btn-row reveal">
+          <a class="mc-btn mc-btn--primary mc-btn--xl"
+             href="assets/files/AntyKostka-1.21.1-fabric.jar" download>
+            <span class="mc-btn__icon">&#8595;</span>
+            <span>Pobierz AntyKostka-1.21.1-fabric.jar</span>
+          </a>
+          <a class="mc-btn mc-btn--discord mc-btn--xl"
+             href="https://discord.gg/yDN4xFVvtN" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.082.114 18.105.135 18.12a19.963 19.963 0 0 0 6.024 3.046.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.046.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+            <span>Dolacz na Discorda</span>
+          </a>
+        </div>
+        <div class="cta__reqs reveal">
+          <span class="req">
+            <img src="assets/blocks/grass.png" alt="" class="pixel-img" width="18" height="18" loading="lazy">
+            Minecraft 1.21.1
+          </span>
+          <span class="req">
+            <img src="assets/files/fabric.png" alt="" class="pixel-img" width="18" height="18" loading="lazy">
+            Fabric Loader
+          </span>
+        </div>
+      </div>
+
+      <div class="cta__deco reveal reveal--right" aria-hidden="true">
+        <div class="cta__deco-group">
+          <img src="assets/blocks/deepslate_diamond.png" alt="" class="pixel-img float-a" loading="lazy">
+          <img src="assets/blocks/deepslate_gold.png"    alt="" class="pixel-img float-b" loading="lazy">
+          <img src="assets/blocks/deepslate_coal.png"    alt="" class="pixel-img float-c" loading="lazy">
+          <img src="assets/icons/icon.png"               alt="" class="pixel-img float-main" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__terrain" aria-hidden="true">
+      <div class="terrain__row terrain__stone"></div>
+      <div class="terrain__row terrain__deepslate"></div>
+      <div class="terrain__row terrain__bedrock"></div>
+    </div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/icons/icon.png" alt="AntyKostka" class="pixel-img" width="40" height="40" loading="lazy">
+        <span class="footer__name">AntyKostka</span>
+      </div>
+      <a class="footer__discord" href="https://discord.gg/yDN4xFVvtN" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#5865F2" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.1 18.082.114 18.105.135 18.12a19.963 19.963 0 0 0 6.024 3.046.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.046.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg><span>Discord</span></a>
+      <div class="footer__copy">
+        <p>Minecraft 1.21.1 &nbsp;&#183;&nbsp; Fabric Mod &nbsp;&#183;&nbsp; Darmowy</p>
+        <p class="footer__disc">Niezwiazany z Mojang Studios ani Microsoft. Minecraft&#174; jest znakiem towarowym firmy Mojang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
